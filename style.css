@@ -1,0 +1,90 @@
+:root {
+    --facebookColor: #4267B2;
+    --twitterColor: #1DA1F2;
+    --linkedinColor: #0077b5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #CAD5E2;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.fab {
+    font-size: 5rem;
+}
+.button{
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 5%;
+    transition: all .5s ease;
+}
+.button .icon {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.button > span {
+    opacity: 0;
+    font-size: 25px;
+}
+.button:nth-child(1):hover {
+    background-color: var(--facebookColor);
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+    padding: 20px;
+    transition: all .5s ease;
+}
+.button:nth-child(2):hover {
+    background-color: var(--twitterColor);
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+    padding: 20px;
+    transition: all .5s ease;
+}
+.button:nth-child(3):hover {
+    background-color: var(--linkedinColor);
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+    padding: 20px;
+    transition: all .5s ease;
+}
+.button:nth-child(1):hover > span {
+    opacity: 1;
+    color: #fff;
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid yellow;
+    transition: all .5s ease;
+}
+.button:nth-child(2):hover > span {
+    opacity: 1;
+    color: #fff;
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid yellow;
+    transition: all .5s ease;
+}
+.button:nth-child(3):hover > span {
+    opacity: 1;
+    color: #fff;
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid yellow;
+    transition: all .5s ease;
+}
